@@ -148,7 +148,8 @@ body {
         display: none;
     }
 
-    #main-section .conteiner-right {
+    #main-section .conteiner-right,
+    #main-section .call-in-action {
         width: calc(100% - 50px);
     }
     #main-section .logo {
