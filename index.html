@@ -18,6 +18,8 @@
             <section id="main-section" class="flex">
                 <!-- eside-left section -->
                 <section class="eside-left flex">
+
+                    <!-- eside-left top section -->
                     <section>
                         <div class="logo">
                             <img id="logo-1" src="img/logo.svg" alt="logo">
@@ -25,52 +27,57 @@
                         </div>
 
                         <div >
+                            <!-- main-menu section -->
                             <section class="main-menu flex">
-                                <div>
-                                    <i class="fas fa-home"></i>
+                                <div class="icon-menu flex">
+                                    <img src="img/home.svg" alt="home">
                                     <span>Home</span>
                                 </div>
-                                <div>
-                                    <i class="fas fa-search"></i>
+                                <div class="icon-menu flex">
+                                    <img src="img/search.svg" alt="search">
                                     <span>Cerca</span>
                                 </div>
-                                <div>
-                                    <i class="fas fa-book-open"></i>
+                                <div class="icon-menu flex">
+                                    <img src="img/libreria.svg" alt="libreria">
                                     <span>La tua libreria</span>
                                 </div>
-                            </section>
+                            </section> <!-- /main-menu section -->
+
+                            <!-- main-playlist section -->
                             <section class="main-playlist">
                                 <h3 class="uppercase">Playlist</h3>
                                 <div class="icon-playlist flex">
                                     <i class="fas fa-plus-square"></i>
-                                <span>Crea Playlist</span>
+                                    <span>Crea Playlist</span>
                                 </div>
-                                <div id="conteiner-playlist flex">    
+                                <div id="conteiner-playlist" class="flex">    
                                     <section class="new-playlist">
-                                        <div>Nome Playlist</div>
-                                        <div>Nome Playlist</div>
-                                        <div>Nome Playlist</div>
-                                        <div>Nome Playlist</div>
-                                        <div>Nome Playlist</div>
-                                        <div>Nome Playlist</div>
-                                        <div>Nome Playlist</div>
+                                        <ul>
+                                            <li>Nome Playlist</li>
+                                            <li>Nome Playlist</li>
+                                            <li>Nome Playlist</li>
+                                            <li>Nome Playlist</li>
+                                            <li>Nome Playlist</li>
+                                            <li>Nome Playlist</li>
+                                            <li>Nome Playlist</li>
+                                        </ul>
                                     </section>
                                 </div>
-                            </section>
+                            </section> <!-- /main-playlist section -->
                         </div>
-                    </section>
+                    </section> <!-- /eside-left top section -->
+
                     <div class="main-acount flex">
-                        <div id="install">
-                            <i class="far fa-arrow-alt-circle-down"></i>
-                            <span> Installa app</span>
+                        <div id="install" class="flex">
+                            <img src="img/download.svg" alt="download">
+                            <span>Installa app</span>
                         </div>
                         <hr>
                         <div id="nome-utente">
-                            <i class="far fa-user-circle"> </i> 
+                            <i class="far fa-user-circle"></i> 
                             <span> Diego Copat</span>
                         </div>
                     </div>
-                    
                 </section> <!-- /eside-left section -->
 
                 <!-- conteiner-right section -->
@@ -91,12 +98,10 @@
                         </div>
                     </section> <!-- /song-conteiner section -->
                     
-                    <!-- song-content section -->
-                    <section id="song-content">
-
-                        <!-- recently-played section  -->
+                    <!-- recently-played section  -->
+                    <section id="recently-played" class="flex">
                         <h2>Recently played</h2>
-                        <section id="recently-played">
+                        <section class="song-album-1 flex">
                             <div class="title-album-1">
                                 <img src="img/metal_lifting.jpg" alt="heavy-metal">
                                 <h3>Heavy-music</h3>
@@ -127,56 +132,44 @@
                                 <h3>Sinister</h3>
                                 <div>Subtitle</div>
                             </div>
-                        </section> <!-- recently-played section  -->
-                        
-                        <!-- recently-played section  -->
-                        <section id="created-for">
-                            <h2>Creato per Diego Copat</h2>
-                            <p>
-                                Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti
-                            </p>
-                            <section id="recently-played">
-                                <div class="song-album-2 flex">
-                                    <img src="img/radar.jpeg" alt="release radar">
-                                    <img src="img/mixdaily.jpeg" alt="daily mix">
-                                </div>
-                                <div class="description-album-2 flex">
-                                    <div class="title-album-2">
-                                        <h3>Release Radas</h3>
-                                    </div>
-                                    <div class="title-album-2">
-                                        <h3>Daily Mix 1</h3>
-                                    </div>
-                                </div>
-                            </section>
-                        </section> <!-- recently-played section  -->
-                        <!-- recently-played section  -->
-                        <section id="popolar-artist">
-                            <h2>Artisti più popolari</h2>
-                            <p>
-                                Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti
-                            </p>
-                            <section id="recently-played">
-                            
-                                <div class="song-album-2  flex">
-                                    <img src="img/youg.jpeg" alt="young">
-                                    <img src="img/einaudi.jpeg" alt="einaudi">
-                                </div>
-                                <div class="description-album-2 flex">
-                                    <div class="title-album-2">
-                                        <h3>Young</h3>
-                                    </div>
-                                    <div class="title-album-2">
-                                        <h3>Einaudi</h3>
-                                    </div>
-                                </div>
-                            </section>
-                        </section> <!-- recently-played section  -->
+                        </section> 
+                    </section> <!-- /recently-played section  -->
 
-                    </section> <!-- song-content section -->
-                        
-                        
-                        
+                    <!-- created-for section  -->
+                    <section id="created-for">
+                        <h2>Creato per Diego Copat</h2>
+                        <p>
+                            Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti
+                        </p>
+                        <section class="song-album-2 flex">
+                            <div class="title-album-2">
+                                <img src="img/radar.jpeg" alt="release radar">
+                                <h3>Release Radas</h3>
+                            </div>
+                            <div class="title-album-2">
+                                <img src="img/mixdaily.jpeg" alt="daily mix">
+                                <h3>Daily Mix 1</h3>
+                            </div>
+                        </section>
+                    </section> <!-- /created-for section  -->
+
+                    <!-- popolar-artist section  -->
+                    <section id="popolar-artist">
+                        <h2>Artisti più popolari</h2>
+                        <p>
+                            Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti
+                        </p>
+                        <section class="song-album-2 flex">
+                            <div class="title-album-2">
+                                <img src="img/youg.jpeg" alt="young">
+                                <h3>Young</h3>
+                            </div>
+                            <div class="title-album-2">
+                                <img src="img/einaudi.jpeg" alt="einaudi">
+                                <h3>Einaudi</h3>
+                            </div>
+                        </section>
+                    </section> <!-- /popolar-artist section  -->
                 </section> <!-- /conteiner-right section -->
             </section> <!-- /main section -->
         </main> <!-- /main -->
