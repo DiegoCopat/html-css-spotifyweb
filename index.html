@@ -30,8 +30,8 @@
                             <!-- main-menu section -->
                             <section class="main-menu flex">
                                 <div class="icon-menu flex">
-                                    <img src="img/home.svg" alt="home">
-                                    <span>Home</span>
+                                    <img class="active" src="img/home.svg" alt="home">
+                                    <span class="active">Home</span>
                                 </div>
                                 <div class="icon-menu flex">
                                     <img src="img/search.svg" alt="search">
@@ -73,8 +73,8 @@
                             <span>Installa app</span>
                         </div>
                         <hr>
-                        <div id="nome-utente">
-                            <i class="far fa-user-circle"></i> 
+                        <div id="nome-utente" class="flex">
+                            <img src="img/profile.svg" alt="profile">
                             <span> Diego Copat</span>
                         </div>
                     </div>
@@ -89,46 +89,82 @@
                     <!-- song-conteiner section -->
                     <section class="song-conteiner flex">
                         <div class="category uppercase flex">
-                            <a href="">In evidenzia</a> 
-                            <a href="">Podcast</a> 
-                            <a href="">Classifiche</a> 
-                            <a href="">Generi e Mood</a> 
-                            <a href="">Nuove uscite</a> 
-                            <a href="">Scopri</a> 
+                            <div>
+                                <a href="">In evidenzia</a>
+                                    <hr class="active">
+                            </div> 
+                            <div>
+                                <a href="">Podcast</a>
+                                    <hr>
+                            </div> 
+                            <div>
+                                <a href="">Classifiche</a>
+                                    <hr>
+                            </div> 
+                            <div>
+                                <a href="">Generi e Mood</a>
+                                    <hr>
+                            </div> 
+                            <div>
+                                <a href="">Nuove uscite</a>
+                                    <hr>
+                            </div> 
+                            <div>
+                                <a href="">Scopri</a>
+                                    <hr>
+                            </div> 
                         </div>
                     </section> <!-- /song-conteiner section -->
                     
                     <!-- recently-played section  -->
                     <section id="recently-played" class="flex">
                         <h2>Recently played</h2>
-                        <section class="song-album-1 flex">
+                        <section class="song-album-1 flex ">
                             <div class="title-album-1">
-                                <img src="img/metal_lifting.jpg" alt="heavy-metal">
+                                <div class="relative">
+                                    <img class="hover-1 relative" src="img/metal_lifting.jpg" alt="heavy-metal">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Heavy-music</h3>
                                 <div>Subtitle</div>
                             </div>
                             <div class="title-album-1">
-                                <img src="img/stranger.jpeg" alt="stranger">
+                                <div class="relative">
+                                    <img src="img/stranger.jpeg" alt="stranger">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                 <div>Kyle Dixon & Michael Stein</div>
                             </div>
                             <div class="title-album-1">
-                                <img src="img/aquietplace.jpeg" alt="aquiet place">
+                                <div class="relative">
+                                    <img src="img/aquietplace.jpeg" alt="aquiet place">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>A quiet place</h3>
                                 <div>Sibtitle</div>
                             </div>
                             <div class="title-album-1">
-                                <img src="img/split.jpeg" alt="split">
+                                <div class="relative">
+                                    <img src="img/split.jpeg" alt="split">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Split</h3>
                                 <div>Subtitle</div>
                             </div>
                             <div class="title-album-1">
-                                <img src="img/cure.jpeg" alt="A cure of wellnes">
+                                <div class="relative">
+                                    <img src="img/cure.jpeg" alt="A cure of wellnes">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>A cure for wellness</h3>
                                 <div>Subtitle</div>
                             </div>
                             <div class="title-album-1">
-                                <img src="img/sinister.jpeg" alt="sinister">
+                                <div class="relative">
+                                    <img src="img/sinister.jpeg" alt="sinister">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Sinister</h3>
                                 <div>Subtitle</div>
                             </div>
@@ -143,11 +179,17 @@
                         </p>
                         <section class="song-album-2 flex">
                             <div class="title-album-2">
-                                <img src="img/radar.jpeg" alt="release radar">
+                                <div class="relative">
+                                    <img src="img/radar.jpeg" alt="release radar">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Release Radas</h3>
                             </div>
                             <div class="title-album-2">
-                                <img src="img/mixdaily.jpeg" alt="daily mix">
+                                <div class="relative">
+                                    <img src="img/mixdaily.jpeg" alt="daily mix">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Daily Mix 1</h3>
                             </div>
                         </section>
@@ -161,11 +203,17 @@
                         </p>
                         <section class="song-album-2 flex">
                             <div class="title-album-2">
-                                <img src="img/youg.jpeg" alt="young">
+                                <div class="relative">
+                                    <img src="img/youg.jpeg" alt="young">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Young</h3>
                             </div>
                             <div class="title-album-2">
-                                <img src="img/einaudi.jpeg" alt="einaudi">
+                                <div class="relative">
+                                    <img src="img/einaudi.jpeg" alt="einaudi">
+                                    <i class="far fa-play-circle icon-play"></i>
+                                </div>
                                 <h3>Einaudi</h3>
                             </div>
                         </section>
@@ -197,14 +245,18 @@
                 <section class="footer-center flex">
                     <div class="center-top flex">
                         <i class="fas fa-random"></i>
-                        <i class="fas fa-caret-left "></i>
+                        <i class="fas fa-step-backward"></i>
                         <i class="far fa-play-circle"></i>
-                        <i class="fas fa-caret-right"></i>
+                        <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo"></i>
                     </div>
                     <div class="center-bottom flex">
                         <span>0:25</span>
-                        <hr>
+                        <div class="background-line relative">
+                            <div class="over-line">
+                                <div class="ball"></div>
+                            </div>
+                        </div>
                         <span>4:35</span>
                     </div>
                 </section> <!-- /footer-center section -->
@@ -215,8 +267,11 @@
                         <i class="fas fa-list"></i>
                         <i class="fas fa-desktop"></i>
                         <i class="fas fa-volume-up"></i>
-                        <!-- <hr id="hr-footer-right"> -->
-                        <hr class="hr">
+                        <div class="background-line relative">
+                            <div class="over-line">
+                                <div class="ball"></div>
+                            </div>
+                        </div>
                     </div>
                 </section> <!-- /footer-right section -->
                 
