@@ -24,43 +24,94 @@ body {
     position: relative;
 }
 
+/* raggruppamenti di css  */
+
+#main-section,
+.eside-left .logo,
+.new-playlist li,
+.main-acount,
+#recently-played,
+#created-for,
+#popolar-artist,
+#recently-played>h2,
+.song-album-1,
+.song-album-1 img,
+.song-album-2 img,
+.song-album-2,
+#created-for>h2,
+#popolar-artist>h2,
+#footer-section,
+.footer-center .center-bottom,
+.footer-right .right-center,
+.left-container {
+    width: 100%;
+}
+
+#main-section,
+.eside-left,
+.new-playlist,
+.conteiner-right,
+.left-container,
+.footer-left,
+.footer-right  {
+    height: 100%;
+}
+
+.eside-left i,
+.eside-left div,
+.eside-left span,
+#install img,
+#install span,
+.category a,
+.title-album-1>div,
+#created-for>p,
+#popolar-artist>p,
+.footer-left .song-description div,
+.footer-left .left-container i {
+    color: #A3A3A3;
+}
+
+.eside-left,
+.main-playlist,
+.main-menu,
+.main-acount,
+#recently-played,
+#created-for,
+#popolar-artist {
+    flex-direction: column;
+}
+
+#logo-small,
+.category hr,
+.song-album-1 img,
+.song-album-2 img {
+    margin: auto;
+}
 /* main section*/
 main {
     height: calc(100vh - 80px);
-}
-#main-section {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
 }
 
     /* eside-left section */
 .eside-left {
     width: 230px;
-    height: 100%;
     background-color: #000000;
-    flex-direction: column;
     justify-content: space-between;
 }
-.eside-left i,
-.eside-left div,
-.eside-left span{
-    color: #A3A3A3;
-}
+
 .eside-left .logo {
-    width: 100%; 
     height: 80px;
     padding-top: 20px;
 }
-#logo-1 {
+#logo {
     margin-left: 20px;
     width: 60%;
 }
-#logo-2 {
-    width: 30px; 
-    margin: auto;
+#logo-small {
+    width: 30px;
     display: none;
 }
+
 .eside-left .main-menu {
     height: 110px; 
     padding-left: 20px;
@@ -118,7 +169,6 @@ main {
     overflow: visible;
 }
 .main-playlist {
-    flex-direction: column;
     height: 40vh;
     color: white;
     padding-left: 20px;
@@ -127,12 +177,10 @@ main {
     overflow: auto;
 }
 .new-playlist {
-    height: 100%;
     margin-bottom: 20px;
     overflow: auto;
 }
-.new-playlist li{
-    width: 100%;
+.new-playlist li {
     font-size: 13px;
     padding-top: 10px;
     list-style: none;
@@ -144,14 +192,11 @@ main {
     font-size: 14px;
 }
 .main-menu {
-    flex-direction: column;
     color: #D2D2D2;
     overflow: hidden;
 }
 
-.main-acount  {
-    width: 100%;
-    flex-direction: column;
+.main-acount {
     font-size: 20px;
     padding-bottom: 15px;
     color: white;
@@ -164,13 +209,11 @@ main {
     width: 20px;
     margin-left: 20px;
     margin-right: 5px;
-    color: #A3A3A3;
-    filter:brightness(50%);
+    filter: brightness(50%);
 }
 #install span {
     font-size: 15px;
     padding-left: 5px;
-    color: #A3A3A3;
 }
 #nome-utente img {
     color: white;
@@ -204,7 +247,6 @@ main {
     /* conteiner-right section */
 .conteiner-right {
     width: calc(100% - 230px);
-    height: 100%;
     padding-top: 100px;
     background-color: #141922;
     overflow-y: auto;
@@ -256,12 +298,10 @@ main {
     font-size: 13px;
     margin: 0 15px 20px 15px;
     font-weight: 600;
-    color: #A3A3A3;
     text-decoration: none;
 }
 .category hr {
     width: 25px;
-    margin: auto;
     visibility: hidden;
 }
 hr.active {
@@ -273,27 +313,19 @@ hr.active {
 #recently-played,
 #created-for,
 #popolar-artist {
-    width: 100%;
     margin-bottom: 15px;
-    flex-direction: column;
 }
 #recently-played>h2{
-    width: 100%;
     font-size: 30px;
     padding: 30px 0 40px 20px;
 }
 .song-album-1 {
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.song-album-1 img,
-.song-album-2 img {
-    width: 100%;
-    margin: auto;
-}
+
 .title-album-1 {
     width: calc(90% / 6);
     margin: 0 auto 15px auto;
@@ -308,7 +340,6 @@ hr.active {
 .title-album-1>div {
     font-size: 12px;
     padding-top: 10px;
-    color: #A3A3A3;
 }
 .icon-play {
     position: absolute;
@@ -332,7 +363,6 @@ hr.active {
 
     /* created-for section e recently played*/
 .song-album-2 {
-    width: 100%;
     padding-left: 0;
     padding-right: 0;
     justify-content: flex-star;
@@ -345,7 +375,6 @@ hr.active {
 }
 #created-for>h2,
 #popolar-artist>h2 {
-    width: 100%;
     font-size: 30px;
     padding: 30px 0 8px 20px;
 }
@@ -354,7 +383,6 @@ hr.active {
     font-size: 13px;
     margin-left: 20px;
     margin-bottom: 30px;
-    color: #A3A3A3;
 }
 
     /* popolar-artist section */
@@ -366,7 +394,6 @@ hr.active {
 /* footer-section */
 #footer-section {
     position: relative;
-    width: 100%;
     height: 80px;
     background-color: #282828;
     justify-content: space-between;
@@ -377,12 +404,9 @@ hr.active {
 .footer-left,
 .footer-right {
     width: 230px;
-    height: 100%;
 }
 .left-container {
-    width: 100%;
     align-items: center;
-    height: 100%;
 }
 .footer-left img{
     display: inline-block;
@@ -399,7 +423,6 @@ hr.active {
     
 }
 .footer-left .song-description div{
-    color: #A3A3A3;
     font-size: 12px;
 }
 .footer-left .song-description div:hover{
@@ -409,7 +432,6 @@ hr.active {
 }
 
 .footer-left .left-container i {
-    color: #A3A3A3;
     padding-left: 15px;
 }
 .song-icons {
@@ -452,7 +474,6 @@ hr.active {
     font-size: 20px;
 }
 .footer-center .center-bottom {
-    width: 100%;
     height: 45%;
     justify-content: space-between;
     align-items: center;
@@ -504,7 +525,6 @@ hr.active {
     align-items: center;
 }
 .footer-right .right-center {
-    width: 100%;
     height: 50%;
     color: #C1C1C1;
     align-items: center;
@@ -624,7 +644,7 @@ hr.active {
 @media all and (max-width: 768px) {
 
     body {
-        min-width: 380px;
+        min-width: 350px;
         min-height: 100vh;
     }
     #main-section .eside-left {
@@ -644,10 +664,10 @@ hr.active {
     #main-section .logo {
         height: 50px;
     }
-    #logo-1 {
+    #logo {
         display: none;
     }
-    #logo-2 {
+    #logo-small {
         display: block;
     }
     .eside-left .main-menu {
